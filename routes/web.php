@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', 'CryptoController@homepage');
