@@ -1,0 +1,19 @@
+.fa-arrow-down {
+	color: red;
+}
+
+.fa-arrow-up {
+	color: green;
+}
+
+.currency-logo img {
+	height: 100px;
+}
+
+body {
+	background-image: url('../images/pattern.png');
+}
+
+.currency-container {
+	padding: 5px;
+}
