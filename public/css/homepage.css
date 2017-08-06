@@ -11,9 +11,21 @@
 }
 
 body {
-	background-image: url('../images/pattern.png');
+	background-image: url('../images/tweed.png');
 }
 
 .currency-container {
 	padding: 5px;
+}
+
+nav a {
+	color: black !important;
+}
+
+nav {
+	background-color: white;
+}
+
+nav .brand-logo {
+	padding-left: 10px;
 }

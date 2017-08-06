@@ -1,20 +1,26 @@
 jQuery(document).ready(function($) {
-	$.ajax({
+	fetchValues();
+
+	function fetchValues() {
+		$.ajax({
 		url: api_endpoint,
 		type: 'GET',
 		dataType: 'json',
-	})
-	.done(function(data) {
-		processValues(data[0], 'btc');
-		processValues(data[1], 'eth');
-		console.log("success");
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
-	});
+		})
+		.done(function(data) {
+			processValues(data[0], 'btc');
+			processValues(data[1], 'eth');
+			console.log("success");
+			document.title = roundNumber(data[0].price_eur) + ' € - Crypto Values';
+
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});
+	}
 
 	function processValues(data, currency) {
 		var value_price_eur = data.price_eur;
@@ -22,7 +28,7 @@ jQuery(document).ready(function($) {
 		var percent_change_24h = data.percent_change_24h;
 		var percent_change_7d = data.percent_change_7d;
 
-		$('#' + currency + '-actual-value').html(roundNumber(data.price_eur) + ' €');
+		$('#' + currency + '-actual-value').html(roundNumberTwoDecimals(data.price_eur) + ' €');
 
 		fillFields(currency + '-value-1h', percent_change_1h, value_price_eur);
 		fillFields(currency + '-value-24h', percent_change_24h, value_price_eur);
@@ -41,10 +47,14 @@ jQuery(document).ready(function($) {
 	}
 
 	function calculateAbsoluteValue(percent_value, actual_value) {
-		return roundNumber((Math.abs(percent_value)/100) * actual_value);
+		return roundNumberTwoDecimals((Math.abs(percent_value)/100) * actual_value);
+	}
+
+	function roundNumberTwoDecimals(number) {
+		return Math.round(number * 100) / 100;
 	}
 
 	function roundNumber(number) {
-		return Math.round(number * 100) / 100;
+		return Math.round(number);
 	}
 });
