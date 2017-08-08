@@ -1,3 +1,7 @@
+html, body, .values-container {
+  height: 100%;
+}
+
 .fa-arrow-down {
 	color: red;
 }
@@ -11,7 +15,7 @@
 }
 
 body {
-	background-image: url('../images/tweed.png');
+	background-color: #009688;
 }
 
 .currency-container {
@@ -29,3 +33,4 @@ nav {
 nav .brand-logo {
 	padding-left: 10px;
 }
+

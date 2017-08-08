@@ -23,9 +23,9 @@
 			</div>
 		</nav> --}}
 		<div class="container">
-			<div class="row center-align">
+			<div class="row valign-wrapper center-align values-container">
 				<div class="col-md-6">
-					<div class="card-panel">
+					<div class="card-panel hoverable">
 						<div class="currency-logo center-align">
 							<img src="{{ url('/images/btc-logo.png') }}" alt="bitcoin-logo">
 						</div>
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="card-panel">
+					<div class="card-panel hoverable">
 						<div class="currency-logo center-align">
 							<img src="{{ url('/images/eth-logo.png') }}" alt="ethereum-logo">
 						</div>
