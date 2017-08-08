@@ -12,16 +12,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 		<link rel="stylesheet" type="text/css" href="{{ url('css/homepage.css') }}">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js" integrity="sha256-3mqgTUhHNgfXgjrzjPOaW03DdQ9hgW92BApzLREoRoA=" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-		{{-- <nav>
-			<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Crypto Values</a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="#">Bitcoin and Ethereum current values and evolution.</a></li>
-			</ul>
-			</div>
-		</nav> --}}
 		<div class="container">
 			<div class="row valign-wrapper center-align values-container">
 				<div class="col-md-6">
@@ -54,8 +48,44 @@
 							<p><span id="eth-value-24h"></span> (last 24h)</p>
 							<p><span id="eth-value-7d"></span> (last week)</p>
 						</div>
+					</div>					
+				</div>
+				<div class="center-align subscribe-container">
+					<a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
+					href="#info-modal">
+						<i class="material-icons">info</i>
+					</a>
+					<a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
+					href="#subscribe-modal">
+						<i class="material-icons">email</i>
+					</a>
+				</div>					
+			</div>			
+			<div id="subscribe-modal" class="modal bottom-sheet">
+				<div class="modal-content">
+					<h4>Subscribe to daily e-mails</h4>
+					<p>Some text.</p>
+						<form class="">
+							<div class="input-field">
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="wrong" data-success="right">E-mail</label>
+							</div>
+						</form>
 					</div>
-				</div>		
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+				</div>
+			</div>
+			<div id="info-modal" class="modal bottom-sheet">
+				<div class="modal-content">
+					<h4>Crypto Values</h4>
+					<p>In this website you can check the current values for cryptocurrencies such as Bitcoin and Ethereum.</p>
+					<p>By clicking in the e-mail button, you can subscribe to daily notifications with the most recent price changes. Do not miss an oportunity again!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+				</div>
 			</div>
 		</div>
 	</body>

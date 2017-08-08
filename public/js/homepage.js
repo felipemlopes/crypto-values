@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
 	fetchValues();
 
+	$('.modal').modal();
+
 	function fetchValues() {
 		$.ajax({
 		url: api_endpoint,
