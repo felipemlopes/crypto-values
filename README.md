@@ -4,7 +4,7 @@ Laravel project that gathers data from an <a href="https://coinmarketcap.com" ta
 
 ## Screenshot
 
-<img src="http://i.imgur.com/93Jwryn.jpg">
+<img src="http://i.imgur.com/VKuLNFQ.png">
 
 ## TO DO
 
