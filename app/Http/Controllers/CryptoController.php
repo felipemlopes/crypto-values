@@ -8,7 +8,8 @@ use GuzzleHttp\Client;
 
 class CryptoController extends Controller
 {
-    public function homepage() {
+    public function homepage()
+    {
     	$http_client = new Client();
 		$result = $http_client->get(env('API_VALUES_QUERY'))->getBody();
 		

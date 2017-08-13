@@ -14,6 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ url('css/homepage.css') }}">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js" integrity="sha256-3mqgTUhHNgfXgjrzjPOaW03DdQ9hgW92BApzLREoRoA=" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 	</head>
 	<body>
 		<div class="container">
@@ -52,36 +53,26 @@
 				</div>
 				<div class="center-align subscribe-container">
 					<a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
-					href="#info-modal">
-						<i class="material-icons">info</i>
-					</a>
-					<a class="btn-floating btn-large waves-effect waves-light red modal-trigger"
 					href="#subscribe-modal">
-						<i class="material-icons">email</i>
+						<i class="material-icons">info</i>
 					</a>
 				</div>					
 			</div>			
-			<div id="subscribe-modal" class="modal bottom-sheet">
-				<div class="modal-content">
-					<h4>Subscribe to daily e-mails</h4>
-					<p>Some text.</p>
-						<form class="">
-							<div class="input-field">
-								<input id="email" type="email" class="validate">
-								<label for="email" data-error="wrong" data-success="right">E-mail</label>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-				</div>
-			</div>
-			<div id="info-modal" class="modal bottom-sheet">
+			<div id="subscribe-modal" class="modal modal-fixed-footer">
 				<div class="modal-content">
 					<h4>Crypto Values</h4>
 					<p>In this website you can check the current values for cryptocurrencies such as Bitcoin and Ethereum.</p>
-					<p>By clicking in the e-mail button, you can subscribe to daily notifications with the most recent price changes. Do not miss an oportunity again!</p>
+					<p>You can subscribe to daily e-mails to keep up with the most recent updates in the values.</p>
+					<h5>Subscribe</h5>
+					<form class="">
+						<div class="input-field">
+							<input id="email" type="email" class="validate">
+							<label for="email" data-error="wrong" data-success="right">E-mail</label>
+						</div>
+						<button id="email-subscribe-submit" class="btn waves-effect waves-light">
+							Subscribe <i class="material-icons right">send</i>
+  						</button>
+					</form>
 				</div>
 				<div class="modal-footer">
 					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>

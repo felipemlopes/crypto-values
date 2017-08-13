@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'CryptoController@homepage');
+Route::post('/subscribers', 'SubscribersController@store');
