@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'CryptoController@homepage');
+Route::get('/charts', 'CryptoController@charts');
+Route::get('/charts-ajax', 'CryptoController@chartsEntriesAjax');

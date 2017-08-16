@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
 
+use App\CoinEntry;
+use App\Coin;
+
 class CryptoController extends Controller
 {
     public function homepage() {
@@ -32,5 +35,14 @@ class CryptoController extends Controller
 		}
 
     	return view('homepage')->with(compact('btc_value_eur', 'btc_hour_change', 'btc_day_change', 'btc_week_change'));
+    }
+
+    public function charts() {
+    	return view('charts');
+    }
+
+    public function chartsEntriesAjax() {
+		$entries = CoinEntry::orderBy('fetched_at', 'desc')->where('currency', Coin::where('currency_symbol', 'btc')->first()->id)->take(12)->get()->reverse()->all();
+    	return json_encode($entries);
     }
 }
