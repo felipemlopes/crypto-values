@@ -10,12 +10,12 @@
 		@yield('scripts')
 	</head>
 	<body>
-		<div class="container">
+		<div class="">
 			@yield('content')
 		</div>
-	</body>	
+	</body>
 	<script>
 		var api_endpoint = '{!! env('API_VALUES_QUERY'); !!}';
 	</script>
-	<script src="{{ url('js/homepage.js') }}"></script>	
+	<script src="{{ url('js/homepage.js') }}"></script>
 </html>

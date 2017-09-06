@@ -7,9 +7,11 @@
 @endsection
 
 @section('content')
-<div class="row center-align">
-	<div class="col-md-11.9 charts-container">
-		<canvas id="myChart" width="200" height="200"></canvas>
-	</div>		
+<div class="container-fluid">
+	<div class="row center-align">
+		<div class="col-md-11.9 charts-container">
+			<canvas id="myChart"></canvas>
+		</div>
+	</div>
 </div>
 @endsection
