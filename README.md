@@ -10,5 +10,4 @@ Laravel project that gathers data from an <a href="https://coinmarketcap.com" ta
 
 - Add support for e-mail subscriptions
 - Automatically refresh currency values
-- Run command frequently to store data in database
-- Add support for Bitcoin Cash and Ethereum Classic
+- Add support for Bitcoin Cash, Litecoin and Ethereum Classic
