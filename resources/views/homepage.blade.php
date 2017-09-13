@@ -1,5 +1,14 @@
 @extends('layout')
 
+@section('pageTitle', 'Homepage')
+
+@section('scripts')
+	<script>
+		var api_endpoint = '{!! env('API_VALUES_QUERY'); !!}';
+	</script>
+	<script src="{{ url('js/homepage.js') }}"></script>
+@endsection
+
 @section('content')
 <div class="container">
 	<div class="row valign-wrapper center-align values-container">

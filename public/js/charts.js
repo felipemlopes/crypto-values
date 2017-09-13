@@ -47,6 +47,11 @@ function drawCharts() {
             }
         }
 
+        data_chart_btc.reverse();
+        data_chart_eth.reverse();
+        labels.reverse();
+
+
         var ctx = document.getElementById('myChart').getContext('2d');
         var myLineChart = new Chart(ctx, {
             type: 'line',
