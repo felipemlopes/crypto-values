@@ -11,7 +11,8 @@
 @section('content')
 <div class="container-fluid">
 	<div class="row center-align">
-		<div class="col-md-11.9 charts-container">
+		<div class="col-md-12 charts-container">
+			<h5>Bitcoin and Ethereum evolution over time</h5>
 			<canvas id="myChart"></canvas>
 		</div>
 	</div>

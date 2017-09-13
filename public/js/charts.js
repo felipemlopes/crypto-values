@@ -60,21 +60,31 @@ function drawCharts() {
                 datasets: [{
                     yAxisID: 'BTC',
                     borderColor: '#f57c00',
+                    backgroundColor: '#f57c00',
                     data: data_chart_btc,
                     fill: false,
-                    label: 'Bitcoin'
+                    label: 'Bitcoin',
+                    pointHoverRadius: 5,
+                    pointHitRadius: 15,
                 }, {
                     yAxisID: 'ETH',
                     borderColor: '#1976d2',
+                    backgroundColor: '#1976d2',
                     data: data_chart_eth,
                     fill: false,
-                    label: 'Ethereum'
+                    label: 'Ethereum',
+                    pointHoverRadius: 5,
+                    pointHitRadius: 15,
                 }]
             },
             options: {
                 responsive: false,
+                tooltips: {
+                    mode: 'label',
+                    intersect: true
+                },
                 legend: {
-                    // display: false
+                    fontColor: '#FFFFFF'
                 },
                 scales: {
                     yAxes: [{
@@ -82,29 +92,33 @@ function drawCharts() {
                         type: 'linear',
                         position: 'left',
                         ticks: {
-                            // max: max_btc,
-                            // min: min_btc
                             display: false
                         },
                         gridLines: {
-                            display:false
+                            display: false,
+                            color: '#FFFFFF'
                         }
-
                     }, {
                         id: 'ETH',
                         type: 'linear',
                         position: 'right',
                         ticks: {
-                            // max: max_eth,
-                            // min: min_eth
                             display: false
                         },
+                        gridLines: {
+
+                        }
                     }],
                     xAxes: [{
                         ticks: {
                             autoSkip: false,
                             maxRotation: 90,
-                            minRotation: 90
+                            minRotation: 90,
+                            fontColor: '#FFFFFF'
+                        },
+                        gridLines: {
+                            display: false,
+                            color: '#FFFFFF'
                         }
                     }]
                 }
