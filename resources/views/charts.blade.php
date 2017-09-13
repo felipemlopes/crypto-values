@@ -11,7 +11,7 @@
 @section('content')
 <div class="container-fluid">
 	<div class="row center-align">
-		<div class="col-md-11.9 charts-container">
+		<div class="col-md-12 charts-container">
 			<canvas id="myChart"></canvas>
 		</div>
 	</div>

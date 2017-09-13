@@ -11,6 +11,15 @@
 |
 */
 
+/* Homepage */
+
 Route::get('/', 'CryptoController@homepage');
-Route::get('/charts', 'CryptoController@charts');
-Route::get('/charts-ajax', 'CryptoController@chartsEntriesAjax');
+
+/* Charts */
+
+Route::get('/charts', 'ChartsController@index');
+Route::get('/charts-ajax', 'ChartsController@chartsEntriesAjax');
+
+/* Trading calculator */
+
+Route::get('/calculator', 'CalculatorController@index');
