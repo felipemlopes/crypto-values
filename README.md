@@ -2,7 +2,7 @@
 
 Laravel project that gathers data from an <a href="https://coinmarketcap.com" target="_blank">API</a> and shows the current values and evolution of cryptocurrencies as Bitcoin (BTC) and Ethereum (ETH).
 
-You can visit an online version of the project <a target="_blank" href="http://crypto.gdiasdasilva.com">here</a>.
+You can visit an online version of the project <a href="http://crypto.gdiasdasilva.com" target="_blank">here</a>.
 
 ## Main features
 
