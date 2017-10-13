@@ -10,6 +10,10 @@ You can visit an online version of the project <a target="_blank" href="http://c
 - Charts with the evolution of both currencies over the last 10 days (6 hours intervals)
 - Profit calculator
 
-## Screenshot
+## Screenshots
 
-<img src="http://i.imgur.com/VKuLNFQ.png">
+<img src="https://i.imgur.com/gtQ3LXx.png">
+
+<img src="https://i.imgur.com/21YuVM8.png">
+
+<img src="https://i.imgur.com/aS2MTPW.png">
