@@ -6,7 +6,7 @@ You can visit an online version of the project <a target="_blank" href="http://c
 
 ## Main features
 
-- Check the most recent values for BTC and ETH and their changes in the last hour, last day and last week
+- Most recent values for BTC and ETH and their changes in the last hour, last day and last week
 - Charts with the evolution of both currencies over the last 10 days
 - Profit calculator
 
